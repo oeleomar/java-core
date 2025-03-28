@@ -25,6 +25,6 @@ public class Pilha {
     System.out.println(livros.poll()); // Retorna false se a pilha estiver vazia
     System.out.println(livros.remove()); // Lança exceção se a pilha estiver vazia
     System.out.println(livros.pop()); // Lança exceção se a pilha estiver vazia
-
+    
   }
 }
