@@ -1,3 +1,4 @@
+package colecoes;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -27,10 +28,11 @@ public class Fila {
         fila.isEmpty();
 
         //Obtem o próximo elemento da fila e remove ele
-        //Quando não tem elementos retorna NULL
-        System.out.println(fila.poll()); // -> Não retorna erro 
-        
+        //Comportamento muda quando a fila está vazia
+        System.out.println(fila.poll()); // -> Quando vazia retorna NULL
+        System.out.println(fila.remove()); // -> Quando vazia lança exception
 
-
+        //Verifica se existe a referencia dentro da fila
+        fila.contains("A");
     }
 }
